@@ -1,0 +1,56 @@
+$color-pink1: #ff7575;
+$color-pink2: #FFB5B5;
+$color-gray: rgb(180, 180, 180);
+$text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+$box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    text-align: center;
+    background: $color-pink1;
+    opacity: .5;
+    
+    .logo img {
+        width: 80px;
+    }
+
+
+    .link a {
+        text-decoration: none;
+        color: #fff;
+        transition: .5s;
+        display: inline-block;
+        padding: 30px 20px;
+        font-size: 16px;
+        transition: .3s;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-pink2;
+
+        }
+    }
+
+    #social {
+        a {
+            display: inline-block;
+            padding: 20px 8px;
+            transition: .5s;
+
+            &:hover {
+                filter: invert(99%) sepia(45%) saturate(2%) hue-rotate(199deg) brightness(116%) contrast(100%);
+            }
+        }
+    }
+
+}
+
