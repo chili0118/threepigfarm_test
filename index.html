@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>三隻小豬觀光農場官方網站 | 嘉義旅遊景點</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <!-- 導覽列 -->
     <nav>
         <div></div>
         <div class="link">
@@ -15,7 +20,7 @@
             <a href="">特色美食</a>
         </div>
         <div class="logo">
-            <img src="./img/logo.png" alt="logo">
+            <a href=""><img src="./img/logo.png" alt="logo"></a>
         </div>
         <div class="link">
             <a href="">文章推薦</a>
@@ -28,5 +33,105 @@
             <a href=""><img src="./img/icon-cart.png" alt="card"></a>
         </div>
     </nav>
+    <!-- banner -->
+    <div id="banner">
+        <div class="banner1">
+            <h1>小時候的故事</h1>
+            <h2>三隻小豬</h2>
+        </div>
+        <div class="banner2">
+            <h1>春遊方案</h1>
+            <h2>快來找我們玩</h2>
+        </div>
+        <div class="banner3">
+            <h1>熱門景點</h1>
+            <h2>小豬打卡勝地</h2>
+        </div>
+    </div>
+
+    <!-- 最新消息 -->
+    <div id="news">
+        <h1 class="title-big">最新消息</h1>
+        <div id="news-content">
+            <div class="news-card">
+                <img src="./img/news1.jpg" alt="">
+                <h3>HAPPY NEW YEAR</h3>
+                <p>非常感謝大家2020年從開幕以來的支持與鼓勵，新的一年我們農場也會持續努力給大家一個豐富、舒服、且乾淨的環境。</p>
+                <button class="btn">MORE</button>
+            </div>
+            <div class="news-card">
+                <img src="./img/news2.jpg" alt="">
+                <h3>假日預約取消</h3>
+                <p>即日起取消假日電話預約制囉!想要來三隻小豬農場玩的朋友們，直接到現場排隊買票即可入園。</p>
+                <button class="btn">MORE</button>
+            </div>
+            <div class="news-card">
+                <img src="./img/news3.png" alt="">
+                <h3>星光票價優惠</h3>
+                <p>每日18:00~20:00購票，即可以享星光票的優惠價唷!</p>
+                <button class="btn">MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 園區介紹 -->
+    <h1 class="title-big">園區環境</h1>
+    <div id="farm">
+        <div class="farm-card">
+            <img src="./img/farm1.jpg" alt="落雨松步道">
+            <h2>落雨松步道</h2>
+        </div>
+        <div class="farm-card">
+            <img src="./img/farm2.jpg" alt="蘑菇哈比屋">
+            <h2>蘑菇哈比屋</h2>
+        </div>
+        <div class="farm-card">
+            <img src="./img/farm3.jpg" alt="兒童戲水區">
+            <h2>兒童戲水區</h2>
+        </div>
+        <div class="farm-card">
+            <img src="./img/farm4.jpg" alt="兒童遊憩區">
+            <h2>兒童遊憩區</h2>
+        </div>
+        <div class="farm-card">
+            <img src="./img/farm5.jpg" alt="仙人掌造景">
+            <h2>仙人掌造景</h2>
+        </div>
+        <div class="farm-card">
+            <img src="./img/farm6.jpg" alt="豬兒的小窩">
+            <h2>豬兒的小窩</h2>
+        </div>
+    </div>
+
+    <!-- 特色美食 -->
+    <h1 class="title-big">特色美食</h1>
+    <div id="food">
+        <div class="food-content">
+            <img src="./img/food1.jpg" alt="阿嬤私房古早味木桶飯">
+            <h2>阿嬤私房古早味木桶飯</h2>
+            <hr>
+        </div>
+        <div class="food-content">
+            <img src="./img/food2.jpg" alt="德國豬腳佐蜂蜜芥末醬">
+            <h2>德國豬腳佐蜂蜜芥末醬</h2>
+            <hr>
+        </div>
+
+    </div>
+
+    <!-- 聯絡三隻小豬 -->
+    <h1 class="title-big">聯絡我們</h1>
+    <form action="" method="post">
+        <input type="text" name="username" placeholder="請輸入您的姓名" required>
+        <input type="email" name="useremail" placeholder="請輸入您的信箱" required>
+        <textarea placeholder="留下您想說的話..."></textarea>
+        <input type="submit" value="送出" class="btn">
+    </form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
