@@ -144,6 +144,7 @@ nav #social a:hover {
   line-height: 1.5;
   margin-bottom: 30px;
   color: #6b6460;
+  height: 100px;
 }
 
 #farm {
@@ -356,7 +357,7 @@ footer small {
 }
 
 .btn {
-  border: none;
+  border: 1px solid #eb8467;
   width: 100%;
   background: #eb8467;
   padding: 5px 30px;

@@ -136,6 +136,7 @@ nav {
         line-height: 1.5;
         margin-bottom: 30px;
         color: $color-gray;
+        height: 100px;
     }
 }
 
@@ -308,7 +309,7 @@ footer {
 }
 
 .btn {
-    border: none;
+    border: 1px solid $color-pink1;
     width: 100%;
     background: $color-pink1;
     padding: 5px 30px;
