@@ -3,6 +3,8 @@ $color-pink2: #ffb5b5;
 $color-gray: #6b6460;
 $text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 $box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+$tablet: 1024px;
+$mobile: 767px;
 
 * {
     margin: 0 auto;
@@ -11,6 +13,13 @@ $box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 // 導覽列
+#menu {
+    background-image: url(./img/menu.png);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: none;
+}
 nav {
     width: 100%;
     position: fixed;
