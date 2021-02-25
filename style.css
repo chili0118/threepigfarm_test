@@ -13,6 +13,20 @@
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  #menu {
+    display: block;
+    margin: 20px 10px 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #menu {
+    display: block;
+    margin: 20px 15px 0 auto;
+  }
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -28,8 +42,21 @@ nav {
   height: 80px;
 }
 
+@media screen and (max-width: 1024px) {
+  nav {
+    -ms-grid-columns: 100% 0 0 0 0;
+        grid-template-columns: 100% 0 0 0 0;
+  }
+}
+
 nav .logo img {
   width: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .logo img {
+    display: none;
+  }
 }
 
 nav .link a,
@@ -44,6 +71,13 @@ nav #link-food {
   font-size: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .link a,
+  nav #link-food {
+    display: none;
+  }
 }
 
 nav .link a:hover,
@@ -93,6 +127,12 @@ nav .sub-link a:hover {
   color: #eb8467;
 }
 
+@media screen and (max-width: 1024px) {
+  nav #social {
+    display: none;
+  }
+}
+
 nav #social a {
   display: inline-block;
   padding: 20px 5px;
@@ -126,10 +166,22 @@ nav #social a:hover {
   background-size: cover;
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner1 {
+    background-size: cover;
+  }
+}
+
 #banner .banner2 {
   background-image: url(./img/banner2.jpg);
   height: 100vh;
   background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  #banner .banner2 {
+    background-size: cover;
+  }
 }
 
 #banner .banner3 {
@@ -138,11 +190,31 @@ nav #social a:hover {
   background-size: cover;
 }
 
+@media screen and (max-width: 1024px) {
+  #banner .banner3 {
+    background-size: cover;
+  }
+}
+
 #banner h1 {
   padding: 200px 0 10px 180px;
   letter-spacing: 15px;
   color: #fff;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+  #banner h1 {
+    padding: 300px 0 0 180px;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner h1 {
+    padding: 300px 0 0 50px;
+    font-size: 36px;
+  }
 }
 
 #banner hr {
@@ -154,6 +226,19 @@ nav #social a:hover {
   margin: 0 0 10px 180px;
 }
 
+@media screen and (max-width: 1024px) {
+  #banner hr {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner hr {
+    margin: 0 0 10px 50px;
+    width: 50%;
+  }
+}
+
 #banner h2 {
   font-size: 22px;
   color: #ffb5b5;
@@ -161,9 +246,29 @@ nav #social a:hover {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 1024px) {
+  #banner h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner h2 {
+    padding-left: 50px;
+    font-size: 24px;
+  }
+}
+
 #news {
   width: 1280px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #news {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
 #news #news-content {
@@ -172,6 +277,14 @@ nav #social a:hover {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+  #news #news-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
 }
 
 #news img {
@@ -190,6 +303,18 @@ nav #social a:hover {
   padding: 20px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  #news h3 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news h3 {
+    font-size: 32px;
+  }
+}
+
 #news p {
   font-size: 16px;
   line-height: 1.5;
@@ -198,9 +323,29 @@ nav #social a:hover {
   height: 100px;
 }
 
+@media screen and (max-width: 1024px) {
+  #news p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #news p {
+    font-size: 22px;
+    height: 120px;
+  }
+}
+
 #farm {
   width: 1280px;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  #farm {
+    width: 100%;
+  }
 }
 
 #farm .farm-card {
@@ -216,6 +361,7 @@ nav #social a:hover {
      object-fit: cover;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  margin: 0 auto;
 }
 
 #farm img:hover {
@@ -233,6 +379,12 @@ nav #social a:hover {
   width: 1280px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #food {
+    width: 100%;
+  }
 }
 
 #food .food-content:nth-child(2) h2 {
